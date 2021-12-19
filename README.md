@@ -104,6 +104,7 @@ SSH into the control node and follow the steps below:
 - In the elk install playbook under the host name mention elk for installing the elk on the elk machine.
 - In the filebeat playbook file under host name mention webservers for installing filebeat
 - Run the specific playbook, and navigate to kibana to check that the installation worked as expected.
+- Use the link : "public IP of Elk:5601/app/kibana"
 
 Commands used :
 Update file: 
