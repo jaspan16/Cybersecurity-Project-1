@@ -116,5 +116,3 @@ ansible-playbook installelk.yml
 
 Install Filebeat:
 ansible-playbook filebeat-playbook.yml
-
-
