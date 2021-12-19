@@ -78,7 +78,7 @@ The playbook implements the following tasks:
 - Enable service docker on boot
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![dockerps](https://user-images.githubusercontent.com/96347818/146693336-85433c64-532d-4c9b-8904-aa2233f4173c.PNG)
+<figure><img src=/Images/dockerps.png><figcaption></figcaption></figure>
 
 
 ### Target Machines & Beats
