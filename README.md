@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 <figure><img src=/Diagrams/Network_Diagram.png><figcaption></figcaption></figure>
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat. The files needed can be viewed in the folder mentioned below.
 
 [Ansible](https://github.com/jaspan16/Cybersecurity-Project-1/tree/main/Ansible)
 
