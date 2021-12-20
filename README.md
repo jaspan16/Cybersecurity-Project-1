@@ -58,8 +58,8 @@ A summary of the access policies in place can be found in the table below.
 | Name                | Publicly Accessible | Allowed IP Addresses       |
 |---------------------|---------------------|----------------------------|
 | JumpBox Provisioner | Yes                 | 97.108.12.53(Local Host Public IP)               |
-| Web-1               | Yes                 | 10.2.0.4(JumpBox) & 168.62.51.183(Load Balancer)  |
-| Web-2               | Yes                 | 10.2.0.4(JumpBox) & 168.62.51.183(Load Balancer)  |
+| Web-1               | No                  | 10.2.0.4(JumpBox) & 168.62.51.183(Load Balancer)  |
+| Web-2               | No                  | 10.2.0.4(JumpBox) & 168.62.51.183(Load Balancer)  |
 | ELK-server          | Yes                 | 10.2.0.0/16(RedTeam Virtual Network) & 97.108.12.53(Local Host Public IP) |
 
 
