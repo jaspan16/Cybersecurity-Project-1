@@ -1,0 +1,44 @@
+Command to extract the TarDocs.tar archive to the current directory:
+ tar xvf TarDocs.tar
+ 
+Command to create the Javaless_Doc.tar archive from the TarDocs/ directory, while excluding the TarDocs/Documents/Java directory:
+ tar cvf Javaless_Docs.tar –exclude=’Documents/Java’ TarDocs
+ 
+Command to ensure Java/ is not in the new Javaless_Docs.tar archive:
+tar tvf Javaless_Docs.tar | grep Java
+
+Command to create an incremental archive called logs_backup_tar.gz with only changed files to snapshot.file for the /var/log directory:
+sudo tar zcvvf logs_backup_tar.gz --listed-incremental=logs_backup.snar –level=0 /var/log/ 
+
+Command to verify auditd is active: 
+systemctl status auditd
+
+Command to restart auditd:
+sudo systemctl restart auditd
+
+Command to list all auditd rules: 
+sudo auditctl -l
+
+Command to produce an audit report: 
+sudo aureport -au
+
+Command to check the disk usage of the system journal unit since the most recent boot:
+sudo journalctl -b -u systemd-journald | less
+
+Create a secret user named sysd. Make sure this user doesn't have a home folder created:
+adduser --no-create-home sysd
+
+Give your secret user a password:
+passwd sysd
+
+Give your secret user a system UID < 1000:
+usermod -u 200 sysd
+
+Give your secret user the same GID:
+groupmod -g 200 sysd
+
+Restart the SSH service:
+sudo systemctl restart ssh
+
+
+
