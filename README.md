@@ -63,9 +63,9 @@ A summary of the access policies in place can be found in the table below.
 | ELK-server          | Yes                 | 10.2.0.0/16(RedTeam Virtual Network) & 97.108.12.53(Local Host Public IP) |
 
 Explanation:
-The JumpBox Provisioner is publicly accessible from only local host Public IP through SSH port 22.
-The DVWA service for Web-1 and Web-2 is publicly accessible from local host Public IP through the Load-Balancer via HTTP port 80.
-The ELK server is allowing kibana service publicly accessible from local host public IP through port 5601.  
+- The JumpBox Provisioner is publicly accessible from only local host Public IP through SSH port 22.
+- The DVWA service for Web-1 and Web-2 is publicly accessible from local host Public IP through the Load-Balancer via HTTP port 80.
+- The ELK server is allowing kibana service publicly accessible from local host public IP through port 5601.  
 
 
 ### Elk Configuration
