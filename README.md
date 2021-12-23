@@ -98,7 +98,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat record the log files such as audit logs, gc logs, server logs and deprecation logs.
-_ Metricbeat records the metrics and statistics. Further ships these to either Elasticsearch or Logstash. 
+- Metricbeat records the metrics and statistics. Further ships these to either Elasticsearch or Logstash. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
