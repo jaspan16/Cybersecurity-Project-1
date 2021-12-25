@@ -48,7 +48,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Gateway machine (JumpBox Provisioner) can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the JumpBox Provisioner can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 97.108.12.53
 
 Machines within the network can only be accessed by JumpBox Provisioner through TCP port 22 via SSH.
@@ -63,9 +63,9 @@ A summary of the access policies in place can be found in the table below.
 | ELK-server          | Yes                 | 10.2.0.0/16(RedTeam Virtual Network) & 97.108.12.53(Local Host Public IP) |
 
 Explanation:
-- The JumpBox Provisioner is publicly accessible from only local host Public IP through SSH port 22.
-- The DVWA service for Web-1 and Web-2 is publicly accessible from local host Public IP through the Load-Balancer via HTTP port 80.
-- The ELK server is allowing kibana service publicly accessible from local host public IP through port 5601.  
+- The JumpBox Provisioner is publicly accessible from only whitelisted IP through SSH port 22.
+- The DVWA service of Web-1 and Web-2 is publicly accessible from whitelisted IP through the Load-Balancer via HTTP port 80.
+- The ELK server is allowing kibana service publicly accessible from whitelisted IP through port 5601.  
 
 
 ### Elk Configuration
